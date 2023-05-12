@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 dotenv.config();
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res) => {
     res.status(200).json({
         status: 'success'
     });
